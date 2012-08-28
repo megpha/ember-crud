@@ -1,0 +1,6 @@
+{{#each book in content}}
+  {{book.name}}
+  ({{book.author}})
+  <a {{action editBook book href="true"}}> edit </a>
+{{/each}}
+<a {{action newBook href="true"}}> New Book </a>

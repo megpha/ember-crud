@@ -1,0 +1,6 @@
+<label {{bindAttr for="view.bookName.elementId"}}> Name</label>
+{{view Em.TextField valueBinding="name" viewName="bookName"}}
+<label {{bindAttr for="view.bookAuthor.elementId"}}> Author</label>
+{{view Em.TextField valueBinding="author" viewName="bookAuthor"}}
+<button type="submit" {{action save}}>save</button>
+<button type="cancel" {{action cancel}}>cancel</button>
